@@ -30,9 +30,9 @@ app.get("/about", (req, res) => {
 app.get("/contact", (req, res) => {
   res.render("contact");
 });
-// app.get("/blog", (req, res) => {
-//   res.render("blog");
-// });
+app.get("/blog", (req, res) => {
+  res.render("blog");
+});
 app.get("*", (req, res) => {
   res.render("404");
 });
